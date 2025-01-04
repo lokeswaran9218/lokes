@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+        .form-container {
+            background-color: #00bfff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4500;
+        }
+        input, textarea, select {
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            width: 32%;
+            padding: 10px;
+            margin: 5px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #e63900;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form>
+            <label>Enter Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+            
+            <label>Enter Password:</label>
+            <input type="password" placeholder="Enter password" required>
+            
+            <label>Enter Address:</label>
+            <textarea rows="3" placeholder="Enter your address"></textarea>
+            
+            <label>Select Game:</label>
+            <select>
+                <option>Hockey</option>
+                <option>Football</option>
+                <option>Badminton</option>
+                <option>Cricket</option>
+                <option>Volleyball</option>
+            </select>
+            
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br>
+            
+            <label>Upload your photo:</label>
+            <input type="file">
+            
+            <div>
+                <button type="button" class="btn">Click Me</button>
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn">Submit Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
